@@ -81,7 +81,7 @@ const store = createStore({
           setTimeout(async () => {
             const res = await axios.get("/api/offices");
             resolve(res);
-          }, 500); // Delay for 3 seconds
+          }, 500); // Delay for 500ms
         });
 
         commit("setOffices", response.data);
